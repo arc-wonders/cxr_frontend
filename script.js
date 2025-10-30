@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadingElement = document.getElementById('loading');
     const errorElement = document.getElementById('error');
 
-    const API_URL = 'http://wkkokcg8socgcc8kcowc4k84.161.118.162.87.sslip.io'; // Update this with your API URL
+    const API_URL = 'https://cxr.yashmishra.xyz'; // Update this with your API URL
 
     // Preview image when selected
     imageInput.addEventListener('change', (e) => {
