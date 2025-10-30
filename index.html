@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Ray Pneumonia Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pneumonia Detection from Chest X-Ray</h1>
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="uploadBtn">Analyze Image</button>
+        </div>
+        <div class="preview-section">
+            <img id="imagePreview" src="#" alt="X-Ray Preview" style="display: none;">
+        </div>
+        <div class="results-section" style="display: none;">
+            <h2>Analysis Results</h2>
+            <div class="result-item">
+                <span>Probability:</span>
+                <span id="probability">-</span>
+            </div>
+            <div class="result-item">
+                <span>Classification:</span>
+                <span id="classification">-</span>
+            </div>
+            <div class="result-item">
+                <span>Processing Time:</span>
+                <span id="latency">-</span>
+            </div>
+        </div>
+        <div id="loading" style="display: none;">
+            Analyzing image...
+        </div>
+        <div id="error" class="error" style="display: none;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
